@@ -1,0 +1,27 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+	xmlns:ser="http://www.stianbid.com.br/ServiceFundoInvestimento/" 
+	xmlns:com="http://www.stianbid.com.br/Common" 
+	xmlns:sch="http://www.stianbid.com.br/SchemaFundo">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ser:Consumir>
+            <RequisicaoConsulta>
+            <com:idMsgSender>ConsultaPaginadaFundos</com:idMsgSender>
+            <com:qtMaxElement>20</com:qtMaxElement>
+            <com:PgNb>1</com:PgNb>            
+            <sch:listaIdRegistro>
+                <sch:idRegistro>
+                    <sch:CNPJ>0092568</sch:CNPJ>
+                </sch:idRegistro>
+                <sch:idRegistro>
+                    <sch:CNPJ>0092614</sch:CNPJ>
+                </sch:idRegistro>               
+                <sch:idRegistro>
+                    <sch:CNPJ>0092681</sch:CNPJ>
+                </sch:idRegistro>               
+            </sch:listaIdRegistro>
+            <sch:icHistorico>No</sch:icHistorico>
+            </RequisicaoConsulta>
+        </ser:Consumir>
+    </soapenv:Body>
+</soapenv:Envelope>
